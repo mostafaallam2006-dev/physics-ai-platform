@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #0f172a;
+  border-bottom: 1px solid #1e3a8a;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo1 {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 12px #3b82f6;
+  transition: 0.3s;
+}
+
+.logo1:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.logo-container:hover .logo {
+  color: #60a5fa;
+  text-shadow: 0 0 10px #3b82f6;
+}
+
+.cta-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+
+.auth-page {
+  display: flex;
+  height: 100vh;
+}
+
+.auth-form {
+  width: 50%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  color: #e0f2fe;
+}
+
+.auth-form input,
+.auth-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+.auth-form select {
+  cursor: pointer;
+}
+
+.main-btn {
+  background: #3b82f6;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.auth-visual {
+  width: 50%;
+  background: radial-gradient(circle, #1e3a8a, #0f172a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.auth-visual h1 {
+  margin-bottom: 20px;
+}
+
+.auth-visual p {
+  color: #cbd5f5;
+  margin-bottom: 20px;
+}
+
+.auth-visual img {
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #3b82f6;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #94a3b8;
+}
+
+.auth-form a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
+.forgot {
+  display: block;
+  margin: 5px 0 10px;
+  font-size: 14px;
+}
+
+.g_id_signin {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .auth-page {
+    flex-direction: column;
+  }
+
+  .auth-form, .auth-visual {
+    width: 100%;
+  }
+
+  .auth-visual {
+    order: -1;
+  }
+}
