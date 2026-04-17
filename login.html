@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/auth.css">
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+  <div class="logo-container">
+  <img class="logo1" src="photo/Logo.png" alt="Logo">
+  <span class="logo">Physics AI</span>
+</div>
+  
+</header>
+
+<div class="auth-page">
+
+  <!-- RIGHT (FORM) -->
+  <div class="auth-form">
+
+    <h2>تسجيل الدخول</h2>
+
+    <form>
+    <input type="email" placeholder="البريد الإلكتروني" required>
+    <input type="password" placeholder="كلمة المرور" required>
+
+    <a class="forgot" href="#">نسيت كلمة المرور؟</a>
+
+    <button class="main-btn">الدخول إلى المنصة</button>
+    </form>
+
+    <div class="divider">أو</div>
+
+    <div id="g_id_onload"
+        data-client_id="YOUR_CLIENT_ID"
+        data-callback="handleCredentialResponse">
+    </div>
+
+    <div class="g_id_signin"></div>
+
+    <p>مستخدم جديد؟ <a href="register.html">أنشئ حسابك الذكي الآن</a></p>
+
+</div>
+
+<div class="auth-visual">
+
+    <h1>⚡ مرحباً بعودتك إلى معملك!</h1>
+    <p>
+    مساعدك الذكي جهز لك الدروس والتدريبات،
+    يلا نكمل طريق التفوق!
+    </p>
+
+    <img src="photo/img_1_2.jpg" alt="">
+</div>
+
+</div>
+
+<script>
+function handleCredentialResponse(res){
+console.log(res.credential);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة تحكم الطالب</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+<header class="header">
+  <div class="logo-container">
+  <img class="logo1" src="photo/Logo.png" alt="Logo">
+  <span class="logo">Physics AI</span>
+</div>
+  
+</header>
+
+
+<div class="greeting">
+  <h2>👋 أهلاً يا أحمد! مستعد تكمل رحلتك؟ 🚀</h2>
+  <p>أداؤك في قوانين نيوتن ممتاز 💪 جرب الاحتكاك اليوم!</p>
+</div>
+
+
+<div class="cards">
+
+  <div class="card">
+    <h3>📊 إتقان المنهج</h3>
+    <div class="circle">65%</div>
+  </div>
+
+  <div class="card">
+    <h3>⚡ نقاط قوتك</h3>
+    <p>الميكانيكا الكلاسيكية</p>
+  </div>
+
+  <div class="card">
+    <h3>🔥 الاستمرارية</h3>
+    <p style="font-size:22px;">5 أيام</p>
+  </div>
+
+</div>
+
+
+<div class="card main-card">
+  <img src="https://via.placeholder.com/400x200">
+  <h3>📘 الفصل الثاني - المجال المغناطيسي</h3>
+
+  <div class="progress">
+    <div></div>
+  </div>
+
+  <button>▶ استئناف الشرح</button>
+</div>
+
+<div class="card">
+  <h3>🧠 اقتراحات اليوم:</h3>
+
+  <p>🔸 تدريب على تحويل الوحدات</p>
+  <button>ابدأ التحدي</button>
+
+  <br><br>
+
+  <p>🧪 تجربة البندول</p>
+  <button>دخول المعمل</button>
+</div>
+
+<div class="ai-btn" onclick="toggleChat()">🤖</div>
+
+<div class="chat">
+  <input id="input" placeholder="اكتب سؤالك في الفيزياء..." />
+  <button onclick="sendMessage()">إرسال</button>
+
+  <div id="messages"></div>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>ّ
